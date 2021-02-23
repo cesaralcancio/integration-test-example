@@ -6,6 +6,6 @@ public class ValidateUnitTest {
 
     @Test
     public void test() {
-        System.out.println("Validating unit testing is running before....");
+        System.out.println("Validating unit testing is running before the integration tests....");
     }
 }

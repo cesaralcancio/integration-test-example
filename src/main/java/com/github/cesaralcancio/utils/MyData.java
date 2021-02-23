@@ -1,4 +1,4 @@
-package com.github.cesaralcancio;
+package com.github.cesaralcancio.utils;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
