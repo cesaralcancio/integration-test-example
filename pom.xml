@@ -54,6 +54,11 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-failsafe-plugin</artifactId>
+                        <configuration>
+                            <includes>
+                                <include>com.github.cesaralcancio.integration.testes.ValidateConnectionsWithContainers</include>
+                            </includes>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>default-integration-test</id>

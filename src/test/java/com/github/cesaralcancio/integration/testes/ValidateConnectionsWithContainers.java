@@ -8,7 +8,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
 @ActiveProfiles("integration")
-public class ValidateConnectionsWithContainersIT {
+public class ValidateConnectionsWithContainers {
 
     @Autowired
     private MyData mydata;
@@ -17,6 +17,7 @@ public class ValidateConnectionsWithContainersIT {
     public void validate() {
         System.out.println("Running integration tests and connecting to the containers started...");
         System.out.println("Also checking the my.data.value in the properties file. As it is integration tests scope, it is different from the one into the src/main...");
+        System.out.println("To check more how failsafe works: https://maven.apache.org/surefire/maven-failsafe-plugin/examples/junit-platform.html");
         System.out.println(mydata.getValue());
     }
 }
